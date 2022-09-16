@@ -79,7 +79,7 @@ const Courseformscreen = () => {
                         </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col xl='12' sm='12' responsive>
                         <div className="form-category">
                             <h1>Cousre </h1>
                             <label>category_id</label>

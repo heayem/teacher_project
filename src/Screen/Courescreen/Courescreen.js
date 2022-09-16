@@ -5,22 +5,22 @@ import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {AiTwotoneEdit,AiFillDelete,AiFillFolderAdd} from 'react-icons/ai'
+import { AiTwotoneEdit, AiFillDelete, AiFillFolderAdd } from 'react-icons/ai'
 import './courescreen.css'
-
+import Table from 'react-bootstrap/Table';
 
 const Coursescreen = () => {
 
     const [course, setCouse] = useState([]);
-    const [txt,setTxt]=useState({
-        name:"",
-        category_id:""
+    const [txt, setTxt] = useState({
+        name: "",
+        category_id: ""
     })
     useEffect(() => {
         getdata();
     }, []);
 
-    const getdata=()=>{
+    const getdata = () => {
         axios({
             url: "https://demo-node.cleverapps.io/api/course",
             data: {},
@@ -33,24 +33,24 @@ const Coursescreen = () => {
     }
 
 
-    const remove=(course_id)=>{
-        var body= {
-            "course_id":course_id
+    const remove = (course_id) => {
+        var body = {
+            "course_id": course_id
         }
         axios({
             url: "https://demo-intern.cleverapps.io/api/category",
             method: "DElETE",
             data: body,
         }).then(res => {
-            if(!res.error){
+            if (!res.error) {
                 alert("Succes!")
                 getdata();
-            }else{
+            } else {
                 alert("false")
             }
-            
+
         })
-}
+    }
 
     // const handlesearch=(event)=>{
     //     setTxt({
@@ -72,28 +72,28 @@ const Coursescreen = () => {
         <div>
             <Container fluid='xl'>
                 <Row className='Top'>
-                    <Col sm='3'>
+                    <Col xl='3' sm='12'>
                         <h1> Brand name </h1>
-                        
-                        
+
+
                     </Col>
-                    <Col sm='8'> 
+                    <Col xl='8' sm='8'>
                         {/* <input onChange={handlesearch} name='name'   type='text' placeholder='Search...name' />
                         <input onChange={handlesearch} name='category_id'   type='text' placeholder='Search...category' /> */}
-                     </Col>
-                    <Col sm='1'>
+                    </Col>
+                    <Col xl='1' sm='4'>
                         <Link to='/courseformscreen/'>
-                            <button style={{fontSize:"x-large"}}><AiFillFolderAdd/></button>
+                            <button style={{ fontSize: "x-large" }}><AiFillFolderAdd /></button>
                         </Link>
 
                     </Col>
-                    
+
                 </Row>
                 <hr />
                 <Row>
-                    <Col className='course'>
-                        <table>
-                            <thead>
+                    <Col xl='12' sm='12' className='course'>
+                        <Table responsive >
+                            <thead >
                                 <tr>
                                     <th>ID</th>
                                     <th>Name</th>
@@ -113,15 +113,15 @@ const Coursescreen = () => {
                                     return (
                                         <tr key={index}>
                                             <td>{item.course_id}</td>
-                                            <td>{item.name}</td>
+                                            <td >{item.name}</td>
                                             <td>{item.full_price}</td>
                                             <td>{item.status == 1 ? "Active" : "Disable"}</td>
                                             <td>{item.create_at}</td>
                                             <td>{item.category_id}</td>
                                             <td>{item.category_name}</td>
                                             <td>
-                                                <Link to={'/courseformscreen/'+item.course_id}><button style={{color:"green"}}><AiTwotoneEdit/></button></Link>
-                                                <button onClick={()=>remove(item.course_id)} style={{color:"red"}}><AiFillDelete/></button>
+                                                <Link to={'/courseformscreen/' + item.course_id}><button style={{ color: "green" }}><AiTwotoneEdit /></button></Link>
+                                                <button onClick={() => remove(item.course_id)} style={{ color: "red" }}><AiFillDelete /></button>
                                             </td>
 
 
@@ -131,7 +131,7 @@ const Coursescreen = () => {
                                 })}
 
                             </tbody>
-                        </table>
+                        </Table >
                         <div>
 
                         </div>

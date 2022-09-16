@@ -8,9 +8,9 @@ const Homescreen=()=>{
 
     return(
         <div>
-            <Container fluid="xl">
+            <Container fluid="sm">
                 <Row>
-                    <Col xxl> <h2>Brand name </h2> </Col>
+                    <Col sm> <h2>Brand name </h2> </Col>
                 </Row>
                 <hr/>
                 <Row>
@@ -25,17 +25,17 @@ const Homescreen=()=>{
                     
 
                     </Col>
-                    <Col className='Box bg-light'> 
+                    <Col className='Box col-xl-4 col-sm-12 col-x-small-12 bg-light'> 
                     <h3>Title 2</h3>
                     <p>Sub title</p>
                     <div >
                         <div className='text'><h6> Text1 </h6> <h6>1000</h6></div>
                         <hr/>
-                        <div className='text'><h6> Text1 </h6> <h6>1000</h6></div>
+                        <div className='text '><h6> Text1 </h6> <h6>1000</h6></div>
                     </div>
 
                     </Col>
-                    <Col className='Box bg-light'> 
+                    <Col className='Box col-xl-4 col-sm-12 col-x-small-12 bg-light'> 
                     <h3>Title 3</h3>
                     <p>Sub title</p>
                     <div >

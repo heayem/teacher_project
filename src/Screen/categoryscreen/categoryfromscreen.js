@@ -73,7 +73,7 @@ const Categoryscreen = () => {
             <hr /></Col>
                 </Row>
             <Row>
-                <Col>
+                <Col xl='12' sm='12' responsive>
                 <div className="form-category">
                 <h1>Category</h1>
                 <label>Name</label>

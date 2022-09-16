@@ -1,9 +1,4 @@
-.category{
-    width: 100%;
-    padding: 10px;
-    border-collapse: collapse;
-    
-}
+/* Create by yem hea  */
 .category th{
     background-color: #eee;
     color: blue;
@@ -30,7 +25,7 @@
     display: flex;
 }
 .Top button{
-    width: 90%;
+    width: 90px;
     padding: 5px;
     border-radius: 10px;
     border: none;
