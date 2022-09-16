@@ -81,7 +81,7 @@ const Courseformscreen = () => {
                 <Row>
                     <Col>
                         <div className="form-category">
-                            <h1>Category</h1>
+                            <h1>Cousre </h1>
                             <label>category_id</label>
                             <input
                                 type='text'

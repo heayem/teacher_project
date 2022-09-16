@@ -2,6 +2,9 @@
     width: 100%;
     text-align: center;
 }
+body{
+    font-family: 'Vazir', sans-serif !important;
+}
 .course table thead th{
     background-color: #eee;
     font:bold;
@@ -11,6 +14,7 @@
     text-align: center;
     margin: 10px;
     padding: 10px;
+    
 }
 .course table tbody td button{
     width: 80px;
@@ -19,4 +23,14 @@
     border-radius: 10px;
     border: none;
 }
+table thead th {
+    height: 50px;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #96D4D4;
+  }
 

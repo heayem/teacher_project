@@ -14,7 +14,7 @@ const Headerscreen = () => {
    
     
     return (
-        <Container fluid style={{ backgroundColor: "black", padding: 10 }} >
+        <Container fluid style={{padding: 10 }} className='Top-header' >
             <Container fluid="xl" className='Header '  >
                 {is_login =="1" ?
                     <>
