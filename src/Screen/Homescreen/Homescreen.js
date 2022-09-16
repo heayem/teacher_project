@@ -29,9 +29,9 @@ const Homescreen=()=>{
                     <h3>Title 2</h3>
                     <p>Sub title</p>
                     <div >
-                        <div className='text'><h6> Text1 </h6> <h6>1000</h6></div>
+                        <div className='text'><h6> Text2 </h6> <h6>1000</h6></div>
                         <hr/>
-                        <div className='text '><h6> Text1 </h6> <h6>1000</h6></div>
+                        <div className='text '><h6> Text2 </h6> <h6>1000</h6></div>
                     </div>
 
                     </Col>
@@ -39,9 +39,9 @@ const Homescreen=()=>{
                     <h3>Title 3</h3>
                     <p>Sub title</p>
                     <div >
-                        <div className='text'><h6> Text1 </h6> <h6>1000</h6></div>
+                        <div className='text'><h6> Text3 </h6> <h6>1000</h6></div>
                         <hr/>
-                        <div className='text'><h6> Text1 </h6> <h6>1000</h6></div>
+                        <div className='text'><h6> Text3 </h6> <h6>1000</h6></div>
                     </div>
 
                     </Col>
