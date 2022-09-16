@@ -1,0 +1,21 @@
+.Header{
+    position: relative;
+    justify-content: space-between;
+    display:flex;
+    background-color: black;
+}
+.Header .Header-part1{
+   position: relative;
+   justify-content: space-evenly;
+   display: flex;
+   gap: 20px;
+   
+}
+.Header .Header-item{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font: bold;
+   font-size: x-large;
+}
+

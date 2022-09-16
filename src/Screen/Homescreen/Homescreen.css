@@ -1,0 +1,11 @@
+
+.Box{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Box .text{
+    justify-content: space-between;
+    display: flex;
+    color: blue;
+}

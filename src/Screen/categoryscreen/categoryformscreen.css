@@ -1,0 +1,30 @@
+.form-category{
+
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #eeee;
+    box-shadow: 0px 15px 15px 0px rgb(69, 67, 67) ;
+}
+.form-category label{
+    margin-top: 10px;
+    font:bold;
+}
+.form-category input {
+    width: 100%;
+}
+.form-category .status{
+    width: auto;
+    margin: 8px;
+}
+.form-category button {
+    width: 100px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}

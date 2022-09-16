@@ -1,0 +1,39 @@
+.category{
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+    
+}
+.category th{
+    background-color: #eee;
+    color: blue;
+    text-align: center;
+}
+.category td{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.category td button{
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+.Top{
+    margin-top: 20px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+}
+.Top button{
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color:blue;
+}
+

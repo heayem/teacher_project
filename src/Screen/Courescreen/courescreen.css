@@ -1,0 +1,22 @@
+.course table{
+    width: 100%;
+    text-align: center;
+}
+.course table thead th{
+    background-color: #eee;
+    font:bold;
+    color: blue;
+}
+.course table tbody td{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.course table tbody td button{
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+

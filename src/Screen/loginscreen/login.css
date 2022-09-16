@@ -1,0 +1,25 @@
+.main-box-1{
+    width: 500px;
+    height:320px;
+    padding:20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    background-color: #eee;
+}
+.main-box-1 input{
+    width: 100%;
+    margin:  0;
+}
+.main-box-1 label{
+    margin:10px 0 0 0;
+}
+.main-box-1 button{
+    width: 100px;
+    float: right;
+    border: none ;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(96, 89, 89);
+}
